@@ -1,0 +1,10 @@
+.footer{
+    background-color: $cl-beige-01;
+    padding: 20px 5vw;
+    text-align: center;
+
+    &-text{
+        font-size: 14px;
+        font-weight: 900;
+    }
+}

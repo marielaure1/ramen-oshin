@@ -1,7 +1,5 @@
-import { Inter } from "next/font/google";
-import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import Nav from "@components/layout/nav/nav";
+import Footer from "@components/layout/footer/footer";
 
 export const metadata = {
   title: "Create Next App",
@@ -10,8 +8,21 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="fr">
+      <head>
+        <link rel="stylesheet" href="css/animate.css"/>
+      </head>
+      <body>
+          <Nav/>
+            {children}
+          <Footer/>
+
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+          <script>
+            new WOW().init();
+          </script>
+
+        </body>
     </html>
   );
 }

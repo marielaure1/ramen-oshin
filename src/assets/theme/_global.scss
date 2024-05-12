@@ -1,0 +1,69 @@
+body{
+    font-family: $ff-primary;
+    color: $cl-red-01;
+    scroll-behavior: smooth;
+}
+
+a{
+    color: $cl-red-01;
+    text-decoration: none;
+}
+
+header, section, footer, nav{
+    box-sizing: border-box;
+}
+
+%img-cover{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logo{
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+%btn{
+    display: flex;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    transition: 300ms;
+}
+
+.btn-primary-fill{
+    @extend %btn;
+    color: $cl-white-01;
+    border: 1px solid $cl-red-01, #E04E44;
+    background: $cl-red-01;
+
+    &:hover{
+        background: $cl-orange-01;
+    }
+}
+
+.title-section{
+    font-size: 48px;
+    font-weight: 900;
+}
+
+input, textarea, button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+@media (max-width: 992px){
+    .logo{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px){
+    .title-section{
+        font-size: 32px;
+    } 
+}

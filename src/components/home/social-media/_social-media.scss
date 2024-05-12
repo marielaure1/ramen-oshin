@@ -1,0 +1,22 @@
+.social-media{
+    padding: 5vw;
+    background-color: $cl-beige-01;
+    
+    &-title{
+        margin-bottom: 50px;
+    }
+
+    &-grid{
+        display: grid;
+        grid-template-columns:  repeat(3, 1fr);
+        gap: 15px;
+
+        &-media{
+            aspect-ratio: 1/1;
+
+            &-img{
+                @extend %img-cover;
+            }
+        }
+    } 
+}
