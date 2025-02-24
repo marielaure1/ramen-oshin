@@ -1,0 +1,32 @@
+.gallery{
+    width: 100%;
+    min-height: 80vh;
+    padding: 0;
+
+    &-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        overflow: hidden;
+        padding-bottom: 200px;
+
+        &-medias{
+            display: flex;
+            grid-gap: 20px;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            
+            .gallery-media{
+                width: 200px;
+                aspect-ratio: 2/3;
+
+                &-img{
+                    @extend %img-cover;
+                }
+            }
+        }
+    }
+}

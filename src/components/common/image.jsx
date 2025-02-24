@@ -1,4 +1,5 @@
 "use client"
+
 import Image from "next/image";
 import { useState } from "react";
 import { motion } from "framer-motion";
@@ -6,11 +7,9 @@ import { motion } from "framer-motion";
 const hiddenMask = `repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 30px, rgba(0,0,0,1) 30px, rgba(0,0,0,1) 30px)`;
 const visibleMask = `repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 0px, rgba(0,0,0,1) 0px, rgba(0,0,0,1) 30px)`;
 
-
 export default function ImageAnimation({className, src, alt}) {
-
     const [isLoaded, setIsLoaded] = useState(false);
-    const [isInView, setIsInView] = useState(false);
+    const [isInView, setIsInView] = useState(false);  
 
     return(
         <motion.div

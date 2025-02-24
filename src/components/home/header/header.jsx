@@ -1,15 +1,73 @@
 import Image from "next/image";
-import Banner from "@img/banner.png";
-import Link from "next/link";
+import { useRef, useEffect } from "react";
+import { useGSAP } from "@gsap/react";
+import Banner from "@img/banner.jpg";
+import Oshin from "@img/oshin.svg";
 
-export default function Header() {
+export default function Header({ gsap }) {
+
+    const containerRef = useRef();
+    const imgRef = useRef();
+    const textRef = useRef();
+    
+    const handleAnimations = () => {
+
+        gsap.set(document.body, { overflowY: "hidden" })
+        let tl = gsap.timeline();
+        tl.to(
+            textRef.current,
+            { 
+                delay: 2, 
+                width: "calc(100% - 20px)", 
+                duration: 1,
+                bottom: 10,
+                onComplete: () => {
+                    tl.fromTo(
+                        imgRef.current,
+                        { 
+                            autoAlpha: 0
+                        },
+                        { 
+                            height: window.innerHeight - textRef.current.height - 20 + "px",
+                            autoAlpha: 1,
+                            delay: 0, 
+                            y: 0, 
+                            duration: 1 
+                        }, ">"
+                    ).to(
+                        document.body,
+                        {
+                            overflowY: "auto"
+                        }
+                    );;
+                }
+            }
+        )
+    };
+
+    useGSAP(() => {
+        handleAnimations();
+    }, { scope: containerRef });
+
+    useEffect(() => {
+        const handleResize = () => {
+            gsap.killTweensOf([imgRef.current, textRef.current]);
+            handleAnimations();
+        }
+
+        window.addEventListener("resize", handleResize);
+
+        return () => {
+            window.removeEventListener("resize", handleResize)
+        }
+    }, []);
+
     return(
-        <header className="header" id="header">
-            <Image className="header-img" src={Banner} alt="Ramen Oshin" />
+        <header ref={containerRef} className="header" id="header">
+            <Image ref={imgRef} className="header-img" src={Banner} alt="Ramen Oshin" />
 
             <div className="header-content">
-                <h1 className="header-content-title">Ramen Oshin</h1>
-                <Link href={"/"} className="header-content-btn btn-primary-fill">01 23 45 67 89</Link>
+                <Image ref={textRef} className="header-content-text" src={Oshin} alt="Ramen Oshin" />
             </div>
         </header>
     )

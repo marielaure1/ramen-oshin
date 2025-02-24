@@ -1,10 +1,21 @@
-$ff-primary: "Soka", sans-serif;
+$ff-primary: "Helvetica Now Display", sans-serif;
 $ff-secondary: "poppins", sans-serif;
 
-$cl-red-01: #E04E44;
-$cl-red-02: #F4C0C0;
+$cl-beige-01: #FDF6DE;
+
+$cl-red-01: #F43233;
+$cl-red-02: #FFDEDE;
+
+$cl-red-a-01: #f4323283;
+
 $cl-red-03: #E9827B;
 $cl-orange-01: #F87537;
 $cl-white-01: #FFFFFF;
-$cl-beige-01: #F7D7CB;
+
 $cl-beige-02: #F1ECE5;
+
+:root{
+    --background: #FDF6DE;
+    --color: #F43233;
+    --color-d: #F43233;
+}

@@ -1,17 +1,16 @@
-@import "@theme/reset";
-@import "@theme/fonts";
-@import "@theme/variables";
-@import "@theme/mixin";
-@import "@theme/keyframes";
-@import "@theme/global";
+@import "./reset";
+@import "./fonts";
+@import "./variables";
+@import "./mixin";
+@import "./keyframes";
+@import "./global";
 
-@import "@components/layout/nav/nav";
-@import "@components/layout/footer/footer";
-
-@import "@components/home/header/header";
-@import "@components/home/about/about";
-@import "@components/home/menu/menu";
-@import "@components/home/contact/contact";
-@import "@components/home/social-media/social-media";
+@import "../../components/home/header/header";
+@import "../../components/home/about/about";
+@import "../../components/home/motion-path-animation/motion-path-animation";
+@import "../../components/home/menu/menu";
+@import "../../components/home/gallery/gallery";
+@import "../../components/home/text-defile/text-defile";
+@import "../../components/home/footer/footer";
 
 // @import "@app/home";
