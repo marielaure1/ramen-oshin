@@ -34,8 +34,8 @@ export default function useMenu() {
                 img: TonkotsuRamen,
                 title: "Tonkotsu Ramen",
                 ingredients: [
-                    { color: "flag-red-fill", text: "Chashu (porc braisé)" },
-                    { color: "flag-red-stroke", text: "Kikurage (champignons noirs)" },
+                    { color: "flag-red-fill", text: "Chashu" },
+                    { color: "flag-red-stroke", text: "Kikurage" },
                     { color: "flag-red-stroke", text: "Oignons nouveaux" }
                 ]
             }
@@ -50,9 +50,9 @@ export default function useMenu() {
                 img: ShoyuRamen,
                 title: "Shoyu Ramen",
                 ingredients: [
-                    { color: "flag-red-fill", text: "Menma (bambou fermenté)" },
+                    { color: "flag-red-fill", text: "Menma" },
                     { color: "flag-red-stroke", text: "Œuf mariné" },
-                    { color: "flag-red-stroke", text: "Narutomaki (surimi)" }
+                    { color: "flag-red-stroke", text: "Narutomaki" }
                 ]
             }
         },
@@ -68,7 +68,7 @@ export default function useMenu() {
                 ingredients: [
                     { color: "flag-red-fill", text: "Maïs" },
                     { color: "flag-red-stroke", text: "Beurre" },
-                    { color: "flag-red-stroke", text: "Chashu (porc braisé)" }
+                    { color: "flag-red-stroke", text: "Chashu" }
                 ]
             }
         },
@@ -84,7 +84,7 @@ export default function useMenu() {
                 ingredients: [
                     { color: "flag-red-fill", text: "Œuf mariné" },
                     { color: "flag-red-stroke", text: "Algue Nori" },
-                    { color: "flag-red-stroke", text: "Épaules de porc effilochées" }
+                    { color: "flag-red-stroke", text: "Épaules de porc" }
                 ]
             }
         },
@@ -98,8 +98,7 @@ export default function useMenu() {
                 img: ShioRamen,
                 title: "Shio Ramen",
                 ingredients: [
-                    { color: "flag-red-fill", text: "Crevettes ou fruits de mer" },
-                    { color: "flag-red-stroke", text: "Wakame (algues)" },
+                    { color: "flag-red-fill", text: "Wakame" },
                     { color: "flag-red-stroke", text: "Graines de sésame" }
                 ]
             }
@@ -114,9 +113,8 @@ export default function useMenu() {
                 img: Tantanmen,
                 title: "Tantanmen",
                 ingredients: [
-                    { color: "flag-red-fill", text: "Viande de porc hachée épicée" },
-                    { color: "flag-red-stroke", text: "Huile de sésame pimentée" },
-                    { color: "flag-red-stroke", text: "Cacahuètes ou graines de sésame" }
+                    { color: "flag-red-fill", text: "Viande de porc" },
+                    { color: "flag-red-stroke", text: "Cacahuètes" }
                 ]
             }
         },
@@ -130,7 +128,7 @@ export default function useMenu() {
                 img: CurryRamen,
                 title: "Curry Ramen",
                 ingredients: [
-                    { color: "flag-red-fill", text: "Pâte de curry japonais" },
+                    { color: "flag-red-fill", text: "Pâte de curry" },
                     { color: "flag-red-stroke", text: "Pommes de terre" },
                     { color: "flag-red-stroke", text: "Carottes" }
                 ]
@@ -146,7 +144,7 @@ export default function useMenu() {
                 img: HiyashiChuka,
                 title: "Hiyashi Chuka",
                 ingredients: [
-                    { color: "flag-red-fill", text: "Jambon ou poulet effiloché" },
+                    { color: "flag-red-fill", text: "Jambon ou poulet" },
                     { color: "flag-red-stroke", text: "Concombre" },
                     { color: "flag-red-stroke", text: "Sauce vinaigrée sucrée" }
                 ]
