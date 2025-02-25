@@ -149,6 +149,7 @@ $card-width-mobile: 1fr;
                 justify-content: center;
                 border: none;
                 outline: none;
+                transform: translateY(40px);
                 
                 &.active{
                     background-color: $cl-red-02;

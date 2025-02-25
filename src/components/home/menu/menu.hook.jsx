@@ -8,7 +8,7 @@ import CardLogo5 from "@img/card-logo5.svg";
 import CardLogo6 from "@img/card-logo6.svg";
 import CardLogo7 from "@img/card-logo7.svg";
 import CardLogo8 from "@img/card-logo8.svg";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import { useAnimation } from "@/utils/animation.util";
 import ShioRamen from "@img/shio-ramen.jpg";
@@ -22,6 +22,8 @@ import HiyashiChuka from "@img/hiyashi-chuka.jpg";
 
 export default function useMenu() {
     const { gsap } = useAnimation();
+    const menuContent = useRef();
+    const menuContentSwitchBtn = useRef();
 
     const menuList = [
         {
@@ -140,7 +142,7 @@ export default function useMenu() {
                 title: "Hiyashi Chuka",
                 ingredients: [
                     { color: "flag-red-fill", text: "Jambon ou poulet" },
-                    { color: "flag-red-stroke", text: "Concombre" },
+                    { color: "flag-red-stroke", text: "Crevette" },
                 ]
             }
         }
@@ -153,33 +155,36 @@ export default function useMenu() {
     }
 
     useGSAP(() => {
+
+        gsap.set(menuContentSwitchBtn.current, {
+            y: 40
+        })
         
         const tl = gsap.timeline({
             scrollTrigger: {
-                trigger: ".menu-content",
+                trigger: menuContent.current,
                 start: "top bottom",
-                end: "top-=100 bottom"
+                end: "top-=100 bottom",
+                scrub: 1
             },
         });
 
         tl
-        .from(".menu-content-switch-btn", {
-            y: 40
-        })
-        .to(".menu-content-switch-btn", {
+        .to(menuContentSwitchBtn.current, {
             y: 0
         });
 
         const tl2 = gsap.timeline({
             scrollTrigger: {
-                trigger: ".menu-content",
+                trigger: menuContent.current,
                 start: "bottom center",
-                end: "bottom-=100 center"
+                end: "bottom-=100 center",
+                scrub: 1
             },
         });
 
         tl2
-        .to(".menu-content-switch-btn", {
+        .to(menuContentSwitchBtn.current, {
             y: 40,
         });
         
@@ -187,7 +192,8 @@ export default function useMenu() {
         // gsap.to(".menu-content-switch-btn", {
         //     scrollTrigger: {
         //         trigger: ".menu-content",
-        //         start: "bottom center",
+        //         start: "bottom+=100 center",
+        //         end: "bottom center",
         //         markers: true,
         //         id: "sortie"
         //     },
@@ -200,6 +206,8 @@ export default function useMenu() {
     return { 
         menuList,
         actived,
-        toggle
+        toggle,
+        menuContentSwitchBtn,
+        menuContent
     };
 }

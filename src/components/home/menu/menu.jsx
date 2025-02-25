@@ -11,13 +11,15 @@ export default function Menu() {
     const { 
         menuList,
         actived,
-        toggle
+        toggle,
+        menuContentSwitchBtn,
+        menuContent
     } = useMenu();
  
     return(
         <section className="menu" id="menu">
             <TitleSection title="Découvrez notre menu" />
-            <div className="menu-content">
+            <div ref={menuContent} className="menu-content">
                 <div className={`menu-content-grid ${actived ? "actived" : "desactived"}`}>
                     {menuList && menuList.map((plat, key) => (
                     <div className="card" key={key}>
@@ -45,7 +47,7 @@ export default function Menu() {
                     ))}
                 </div>
                 <div className="menu-content-switch">
-                    <button onClick={toggle} className={`menu-content-switch-btn ${actived ? "" : "active"}`}>
+                    <button ref={menuContentSwitchBtn} onClick={toggle} className={`menu-content-switch-btn ${actived ? "" : "active"}`}>
                         <IterationCw size={18} />
                     </button>
                 </div>
