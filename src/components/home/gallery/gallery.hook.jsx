@@ -13,39 +13,39 @@ import Gallery9 from "@img/gallery-9.jpg";
 export const useGallery = ({ gsap }) => {
     const galleries = [
         {
-            img: Gallery1,
+            img: "/api/optimize-image?img=gallery-1.jpg&format=webp",
             alt: "Restaurant"
         },
         {
-            img: Gallery2,
+            img: "/api/optimize-image?img=gallery-2.jpg&format=webp",
             alt: "Restaurant"
         },
         {
-            img: Gallery3,
+            img: "/api/optimize-image?img=gallery-3.jpg&format=webp",
             alt: "Restaurant"
         },
         {
-            img: Gallery4,
+            img: "/api/optimize-image?img=gallery-4.jpg&format=webp",
             alt: "Restaurant"
         },
         {
-            img: Gallery9,
+            img: "/api/optimize-image?img=gallery-9.jpg&format=webp",
             alt: "Restaurant"
         },
         {
-            img: Gallery5,
+            img: "/api/optimize-image?img=gallery-5.jpg&format=webp",
             alt: "Restaurant"
         },
         {
-            img: Gallery6,
+            img: "/api/optimize-image?img=gallery-6.jpg&format=webp",
             alt: "Restaurant"
         },
         {
-            img: Gallery7,
+            img: "/api/optimize-image?img=gallery-7.jpg&format=webp",
             alt: "Restaurant"
         },
         {
-            img: Gallery8,
+            img: "/api/optimize-image?img=gallery-8.jpg&format=webp",
             alt: "Restaurant"
         }
     ];

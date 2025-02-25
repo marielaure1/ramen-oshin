@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { useRef, useEffect } from "react";
 import { useGSAP } from "@gsap/react";
-import Banner from "@img/banner.jpg";
 import Oshin from "@img/oshin.svg";
 
 export default function Header({ gsap, pageRef }) {
@@ -69,10 +68,10 @@ export default function Header({ gsap, pageRef }) {
 
     return(
         <header ref={containerRef} className="header" id="header">
-            <Image ref={imgRef} className="header-img" src={Banner} alt="Ramen Oshin" />
+            <Image ref={imgRef} className="header-img" src="/api/optimize-image?img=banner.jpg&format=webp" alt="Ramen Oshin" width={1800} height={1500}/>
 
             <div className="header-content">
-                <Image ref={textRef} className="header-content-text" src={Oshin} alt="Ramen Oshin" />
+                <Image ref={textRef} className="header-content-text" src={Oshin} alt="Ramen Oshin" width={1500} height={1500} />
             </div>
         </header>
     )

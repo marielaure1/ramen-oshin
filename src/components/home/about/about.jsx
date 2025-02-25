@@ -1,7 +1,6 @@
 "use client"
 
 import Image from "next/image";
-import Apropos3 from "@img/ramen.jpg";
 import { useAbout } from "@components/home/about/about.hook";
 import { TitleSection } from "@components/common/title-section";
 import { Flag } from "@components/common/flag";
@@ -29,7 +28,7 @@ export default function About({ gsap }) {
                     </div>
                     <div className="about-intro-container">
                         <div className="about-intro-left-img">
-                            <Image src={Apropos3} alt="Ramen Oshin" />
+                            <Image src="/api/optimize-image?img=ramen.jpg&format=webp" alt="Ramen Oshin" width={1000} height={1000}/>
                         </div>
                     </div>
                 </div>
@@ -50,7 +49,7 @@ export default function About({ gsap }) {
                     <div key={index} className={`about-card`}>
                         <div className="about-card-media">
                             <div className="about-card-media-img">
-                                <Image src={etablishment.img} alt={etablishment.title} />
+                                <Image src={etablishment.img} alt={etablishment.title} width={1500} height={1800} />
                             </div>
                         </div>
                         <div className="about-card-content">

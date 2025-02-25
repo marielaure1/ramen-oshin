@@ -10,7 +10,7 @@ export async function GET(req) {
 
     if (!img) return NextResponse.json({ error: "No image provided" }, { status: 400 });
 
-    const imagePath = path.join(process.cwd(), "public", "images", img);
+    const imagePath = path.join(process.cwd(), "src", "assets", "img", img);
 
     if (!fs.existsSync(imagePath)) {
         return NextResponse.json({ error: "Image not found" }, { status: 404 });
@@ -18,7 +18,7 @@ export async function GET(req) {
 
     try {
         const buffer = await sharp(imagePath)
-            .resize(1000)
+            .resize(1500)
             .toFormat(format)
             .toBuffer();
 

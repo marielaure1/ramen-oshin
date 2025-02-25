@@ -2,13 +2,7 @@ import { useRef, useEffect } from "react";
 import { useGSAP } from "@gsap/react";
 import { createTextAnimation } from "@utils/create-text-animation.util";
 import { splitTextToLines } from "@/utils/split-text-to-lines.util";
-// import Apropos1 from "@img/a-propos-01.jpg";
-// import Apropos2 from "@img/a-propos-02.jpg";
 import { useScreen } from "@utils/use-screen.util";
-
-const Apropos1 = "/api/optimize-image?img=a-propos-01.jpg&format=webp";
-const Apropos2 = "/api/optimize-image?img=a-propos-02.jpg";
-
 
 export const useAbout = ({ gsap }) => {
     const { format } = useScreen();
@@ -16,7 +10,7 @@ export const useAbout = ({ gsap }) => {
     const etablishments = [
         {
             title: "Oshin Aiko",
-            img: Apropos1,
+            img: "/api/optimize-image?img=a-propos-01.jpg&format=webp",
             flags: [
                 {
                     text: "128 Boulevard des Cerisiers, 75012 Paris",
@@ -34,7 +28,7 @@ export const useAbout = ({ gsap }) => {
         },
         {
             title: "Oshin Haruto",
-            img: Apropos2,
+            img: "/api/optimize-image?img=a-propos-02.jpg&format=webp",
             flags: [
                 {
                     text: "42 Rue des Lanternes, 75003 Paris",
