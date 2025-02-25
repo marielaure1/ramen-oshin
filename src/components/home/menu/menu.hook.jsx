@@ -36,7 +36,6 @@ export default function useMenu() {
                 ingredients: [
                     { color: "flag-red-fill", text: "Chashu" },
                     { color: "flag-red-stroke", text: "Kikurage" },
-                    { color: "flag-red-stroke", text: "Oignons nouveaux" }
                 ]
             }
         },
@@ -51,7 +50,6 @@ export default function useMenu() {
                 title: "Shoyu Ramen",
                 ingredients: [
                     { color: "flag-red-fill", text: "Menma" },
-                    { color: "flag-red-stroke", text: "Œuf mariné" },
                     { color: "flag-red-stroke", text: "Narutomaki" }
                 ]
             }
@@ -67,7 +65,6 @@ export default function useMenu() {
                 title: "Miso Ramen",
                 ingredients: [
                     { color: "flag-red-fill", text: "Maïs" },
-                    { color: "flag-red-stroke", text: "Beurre" },
                     { color: "flag-red-stroke", text: "Chashu" }
                 ]
             }
@@ -82,9 +79,8 @@ export default function useMenu() {
                 img: Tsukemen,
                 title: "Tsukemen",
                 ingredients: [
-                    { color: "flag-red-fill", text: "Œuf mariné" },
+                    { color: "flag-red-fill", text: "Épaules de porc" }
                     { color: "flag-red-stroke", text: "Algue Nori" },
-                    { color: "flag-red-stroke", text: "Épaules de porc" }
                 ]
             }
         },
@@ -130,7 +126,6 @@ export default function useMenu() {
                 ingredients: [
                     { color: "flag-red-fill", text: "Pâte de curry" },
                     { color: "flag-red-stroke", text: "Pommes de terre" },
-                    { color: "flag-red-stroke", text: "Carottes" }
                 ]
             }
         },
@@ -145,7 +140,6 @@ export default function useMenu() {
                 title: "Hiyashi Chuka",
                 ingredients: [
                     { color: "flag-red-fill", text: "Jambon ou poulet" },
-                    { color: "flag-red-stroke", text: "Concombre" },
                     { color: "flag-red-stroke", text: "Sauce vinaigrée sucrée" }
                 ]
             }
