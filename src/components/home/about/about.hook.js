@@ -17,10 +17,6 @@ export const useAbout = ({ gsap }) => {
                     color: "flag-red-fill"
                 },
                 {
-                    text: "Lyon",
-                    color: "flag-red-fill"
-                },
-                {
                     text: "Spécialité : Tonkotsu Ramen, Shoyu Ramen",
                     color: "flag-red-stroke"
                 }
@@ -32,10 +28,6 @@ export const useAbout = ({ gsap }) => {
             flags: [
                 {
                     text: "42 Rue des Lanternes, 75003 Paris",
-                    color: "flag-red-fill"
-                },
-                {
-                    text: "Marseille",
                     color: "flag-red-fill"
                 },
                 {
