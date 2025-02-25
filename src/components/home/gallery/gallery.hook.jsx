@@ -9,7 +9,6 @@ import Gallery6 from "@img/gallery-6.jpg";
 import Gallery7 from "@img/gallery-7.jpg";
 import Gallery8 from "@img/gallery-8.jpg";
 import Gallery9 from "@img/gallery-9.jpg";
-import { stagger } from "framer-motion";
 
 export const useGallery = ({ gsap }) => {
     const galleries = [

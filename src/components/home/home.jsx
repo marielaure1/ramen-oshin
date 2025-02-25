@@ -12,7 +12,7 @@ import { useAnimation } from "@/utils/animation.util";
 import "@theme/index.css";
 import 'lenis/dist/lenis.css'
 
-export default function Home() {
+export function Home() {
   const { gsap } = useAnimation();
   const pageRef = useRef();
 

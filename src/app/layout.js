@@ -1,5 +1,3 @@
-
-
 export const metadata = {
   title: "Oshin",
   description: "Oshin est un restaurant de cuisine traditionnelle japonaise situé à Paris.",
@@ -21,9 +19,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="fr">
-      <head>
-        <link rel="stylesheet" href="css/animate.css"/>
-      </head>
       <body className="body">
         {children}
       </body>
