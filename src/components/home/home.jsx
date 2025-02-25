@@ -9,6 +9,8 @@ import TextDefile from "@components/home/text-defile/text-defile";
 import Footer from "@components/home/footer/footer";
 import { useEffect, useRef } from "react";
 import { useAnimation } from "@/utils/animation.util";
+import "@theme/index.css";
+import 'lenis/dist/lenis.css'
 
 export default function Home() {
   const { gsap } = useAnimation();
