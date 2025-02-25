@@ -79,7 +79,7 @@ export default function useMenu() {
                 img: Tsukemen,
                 title: "Tsukemen",
                 ingredients: [
-                    { color: "flag-red-fill", text: "Épaules de porc" }
+                    { color: "flag-red-fill", text: "Épaules de porc" },
                     { color: "flag-red-stroke", text: "Algue Nori" },
                 ]
             }
