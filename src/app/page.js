@@ -74,11 +74,11 @@ export default function Home() {
   
   return (
     <main ref={pageRef} className="home"> 
-      {/* <Header gsap={gsap} pageRef={pageRef}/>
+      <Header gsap={gsap} pageRef={pageRef}/>
       <About gsap={gsap}/>
       <MotionPathAnimation gsap={gsap}/>
       <Menu/>
-      <Gallery gsap={gsap}/> */}
+      <Gallery gsap={gsap}/>
       <TextDefile gsap={gsap}/>
       <Footer/>
     </main>
