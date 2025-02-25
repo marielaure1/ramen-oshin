@@ -1,4 +1,5 @@
 import "@theme/index.css";
+import 'lenis/dist/lenis.css'
 
 export const metadata = {
   title: "Oshin",

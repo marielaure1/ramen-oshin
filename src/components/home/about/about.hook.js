@@ -4,7 +4,6 @@ import { createTextAnimation } from "@utils/create-text-animation.util";
 import { splitTextToLines } from "@/utils/split-text-to-lines.util";
 // import Apropos1 from "@img/a-propos-01.jpg";
 // import Apropos2 from "@img/a-propos-02.jpg";
-import 'lenis/dist/lenis.css'
 import { useScreen } from "@utils/use-screen.util";
 
 const Apropos1 = "/api/optimize-image?img=a-propos-01.jpg&format=webp";
