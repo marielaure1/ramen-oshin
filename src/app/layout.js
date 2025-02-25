@@ -3,18 +3,18 @@ import "@theme/index.css";
 export const metadata = {
   title: "Oshin",
   description: "Oshin est un restaurant de cuisine traditionnelle japonaise situé à Paris.",
-  image: "/images/og-image.jpg",
-  url: "https://oshin.fr",
+  // image: "/images/og-image.jpg",
+  url: "https://oshin.marie-laure-edjour.com",
   type: "website",
   siteName: "Oshin",
   siteTitle: "Oshin",
   siteDescription: "Oshin est un restaurant de cuisine traditionnelle japonaise situé à Paris.",
-  siteUrl: "https://oshin.fr",
-  siteImage: "/images/og-image.jpg",
+  siteUrl: "https://oshin.marie-laure-edjour.com",
+  // siteImage: "/images/og-image.jpg",
   siteLanguage: "fr",
   siteLocale: "fr_FR",
   authorName: "Oshin",
-  authorImage: "/images/author.jpg",
+  // authorImage: "/images/author.jpg",
   favicon: "/favicon.ico",
 };
 
