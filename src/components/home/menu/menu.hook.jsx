@@ -140,7 +140,7 @@ export default function useMenu() {
                 title: "Hiyashi Chuka",
                 ingredients: [
                     { color: "flag-red-fill", text: "Jambon ou poulet" },
-                    { color: "flag-red-stroke", text: "Sauce vinaigrée sucrée" }
+                    { color: "flag-red-stroke", text: "Concombre" },
                 ]
             }
         }
