@@ -16,8 +16,6 @@ export const metadata = {
   authorName: "Oshin",
   authorImage: "/images/author.jpg",
   favicon: "/favicon.ico",
-  themeColor: "#000000",
-  backgroundColor: "#ffffff",
 };
 
 export default function RootLayout({ children }) {

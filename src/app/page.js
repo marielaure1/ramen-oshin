@@ -8,11 +8,12 @@ import Menu from "@components/home/menu/menu";
 import Gallery from "@components/home/gallery/gallery";
 import TextDefile from "@components/home/text-defile/text-defile";
 import Footer from "@components/home/footer/footer";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { useAnimation } from "@/utils/animation.util";
 
 export default function Home() {
   const { gsap } = useAnimation();
+  const pageRef = useRef();
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -72,13 +73,13 @@ export default function Home() {
   }, []);
   
   return (
-    <main className="home"> 
-      <Header gsap={gsap}/>
+    <main ref={pageRef} className="home"> 
+      {/* <Header gsap={gsap} pageRef={pageRef}/>
       <About gsap={gsap}/>
       <MotionPathAnimation gsap={gsap}/>
       <Menu/>
-      <Gallery gsap={gsap}/>
-      {/* <TextDefile gsap={gsap}/> */}
+      <Gallery gsap={gsap}/> */}
+      <TextDefile gsap={gsap}/>
       <Footer/>
     </main>
   );

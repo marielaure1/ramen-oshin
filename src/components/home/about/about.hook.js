@@ -9,39 +9,40 @@ import { useScreen } from "@utils/use-screen.util";
 
 export const useAbout = ({ gsap }) => {
     const { format } = useScreen();
+
     const etablishments = [
         {
-            title: "Titre de l'établissement",
+            title: "Oshin Aiko",
             img: Apropos1,
             flags: [
                 {
-                    text: "402  Avenue de la République",
+                    text: "128 Boulevard des Cerisiers, 75012 Paris",
                     color: "flag-red-fill"
                 },
                 {
-                    text: "Paris",
+                    text: "Lyon",
                     color: "flag-red-fill"
                 },
                 {
-                    text: "Text",
+                    text: "Spécialité : Tonkotsu Ramen, Shoyu Ramen",
                     color: "flag-red-stroke"
                 }
             ]
         },
         {
-            title: "Titre de l'établissement",
+            title: "Oshin Haruto",
             img: Apropos2,
             flags: [
                 {
-                    text: "402  Avenue de la République",
+                    text: "42 Rue des Lanternes, 75003 Paris",
                     color: "flag-red-fill"
                 },
                 {
-                    text: "Paris",
+                    text: "Marseille",
                     color: "flag-red-fill"
                 },
                 {
-                    text: "Text",
+                    text: "Spécialité : Miso Ramen, Tsukemen",
                     color: "flag-red-stroke"
                 }
             ]

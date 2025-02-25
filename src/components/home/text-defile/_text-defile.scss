@@ -6,19 +6,16 @@
     &-container{
         position: relative;
         white-space: nowrap;
-        // overflow: hidden;
-        // width: 100%;
 
         &-text{
             position: relative;
             margin: 0px;
             padding-right: 50px; 
+            width: fit-content;
             text-transform: uppercase;
             font-size: 6vw;
             font-family: $ff-primary;
             color: $cl-red-01;
-            // width: fit-content;
-            // word-break: keep-all;
 
             &:nth-of-type(2){
                 position: absolute;

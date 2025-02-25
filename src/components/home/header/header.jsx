@@ -4,15 +4,13 @@ import { useGSAP } from "@gsap/react";
 import Banner from "@img/banner.jpg";
 import Oshin from "@img/oshin.svg";
 
-export default function Header({ gsap }) {
-
+export default function Header({ gsap, pageRef }) {
     const containerRef = useRef();
     const imgRef = useRef();
     const textRef = useRef();
     
     const handleAnimations = () => {
 
-        gsap.set(document.body, { overflowY: "hidden" })
         let tl = gsap.timeline();
         tl.to(
             textRef.current,
@@ -32,21 +30,28 @@ export default function Header({ gsap }) {
                             autoAlpha: 1,
                             delay: 0, 
                             y: 0, 
-                            duration: 1 
+                            duration: 1,
+                            onComplete: () => {
+                                tl.to(
+                                    pageRef.current,
+                                    {
+                                       height: "fit-content"
+                                    },
+                                    ">"
+                                );
+                            }
                         }, ">"
-                    ).to(
-                        document.body,
-                        {
-                            overflowY: "auto"
-                        }
-                    );;
+                    );
                 }
             }
         )
     };
 
     useGSAP(() => {
-        handleAnimations();
+        if(document.querySelector(".home")){
+            handleAnimations();
+        }
+        
     }, { scope: containerRef });
 
     useEffect(() => {
