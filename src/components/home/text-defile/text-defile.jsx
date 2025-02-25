@@ -36,7 +36,20 @@ function TextAnimation({ text }) {
         gsap.set(firstText.current, {xPercent: xPercent})
         gsap.set(secondText.current, {xPercent: xPercent})
         requestAnimationFrame(animate);
-        xPercent += 0.05
+        xPercent += 0.05;
+
+        const handleResize = () => {
+            cancelAnimationFrame(slider.current);
+            gsap.set(secondText.current, {left: secondText.current.getBoundingClientRect().width})
+            animate();
+        };
+
+        window.addEventListener("resize", handleResize);
+
+        return () => {
+            cancelAnimationFrame(slider.current);
+            window.removeEventListener("resize", handleResize);
+        };
     }
 
     return (
