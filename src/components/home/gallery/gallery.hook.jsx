@@ -51,7 +51,7 @@ export const useGallery = ({ gsap }) => {
         }
     ];
 
-    const textReading = "Bienvenue chez Ramen Oshin. Plongez dans une expérience culinaire unique, où notre dévouement à l'art du ramen se traduit par des bols fumants de délices savoureux. Explorez notre menu élaboré, imprégné des saveurs riches et des traditions héritées du Japon.";
+    const textReading = "Bienvenue chez Oshin. Plongez dans une expérience culinaire unique, où notre dévouement à l'art du ramen se traduit par des bols fumants de délices savoureux. Explorez notre menu élaboré, imprégné des saveurs riches et des traditions héritées du Japon.";
     
     const containerRef = useRef(null);
     const mediasRef = useRef(null);

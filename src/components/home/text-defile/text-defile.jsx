@@ -5,7 +5,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 
 export default function TextDefile() {
-    const textDefile1 = "VENEZ VOUS REGALER CHEZ RAMEN OSHIN";
+    const textDefile1 = "VENEZ VOUS REGALER CHEZ OSHIN";
     const textDefile2 = "BONNE APPETIT - どうぞ召し上がれ";
 
     return (
